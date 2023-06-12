@@ -1,70 +1,19 @@
-# Getting Started with Create React App
+![Animal card](https://github.com/marijapopeska/Animal-Cards-React-app/assets/108872423/4fbd199a-5660-4d34-94ff-5244ce10c6e1)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## The Animal Info App
 
-## Available Scripts
+* The Animal Info App is a React-based web application designed to provide users with a comprehensive collection of information about different animals. It offers an interactive and engaging platform for exploring various species and learning about their characteristics, diets, and additional details.
 
-In the project directory, you can run:
+* The app's main feature is the animal card display, where a curated list of animals is showcased. Each animal card presents essential information, including the animal's name, size, scientific name, and diet. The diet information is represented using emoji icons, making it visually appealing and accessible to users of all ages.
 
-### `npm start`
+* To provide users with a comprehensive understanding of each animal, the app also includes an additional information section. Here, users can explore further details such as external links, notes, and any other relevant information associated with the animal. This additional information enhances the learning experience and allows users to delve deeper into specific species that interest them.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* This app provides an engaging and informative experience that is sure to captivate users and satisfy their curiosity.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## About the Components
 
-### `npm test`
+* The App component serves as the main entry point of the application. It renders a wrapper div containing the heading "Animals" and a mapping of the data array. For each animal in the data array, it renders an AnimalCard component with the respective animal's information passed as props.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* The AnimalCard component is responsible for rendering an individual animal card. It receives props such as name, size, additional, diet, and scientificName. It displays the name and size of the animal and also includes the AnimalDetails component to show the scientific name and diet of the animal. Additionally, it renders any additional information passed through the additional prop.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* The AnimalDetails component is a simple component that displays the scientific name and diet of an animal. The diet prop is an array of strings representing the food the animal consumes. It uses the convertFood function to convert each food item into an appropriate emoji representation.
